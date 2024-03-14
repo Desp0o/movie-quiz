@@ -1,0 +1,26 @@
+.navbar{
+    min-height: 100svb;
+    
+    padding: 43px 31px;
+}
+
+.nav_link{
+    width: 270px;
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    padding: 0 40px;
+
+    font-weight: 600;
+    border-radius: 30px;
+
+    cursor: pointer;
+}
+
+.nav_link.active{
+    color: var(--bg-secondary);
+    background-color: var(--secondary);
+}
