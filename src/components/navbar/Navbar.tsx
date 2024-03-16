@@ -9,33 +9,31 @@ const NavBar: React.FC = () => {
     <div className="navbar">
       <NavLink
         icon={<DashboardIconSVG />}
-        linkName="Link 1"
-        path="/link1"
-        isActive={activeLink === "/link1"}
+        linkName="Main"
+        path="/"
       />
       <NavLink
         icon={<DashboardIconSVG />}
         linkName="Link 2"
         path="/link2"
-        isActive={activeLink === "/link2"}
+        
       />
       <NavLink
         icon={<DashboardIconSVG />}
         linkName="Link 3"
         path="/link3"
-        isActive={activeLink === "/link3"}
+        
       />
       <NavLink
         icon={<DashboardIconSVG />}
         linkName="Link 4"
         path="/link4"
-        isActive={activeLink === "/link4"}
+        
       />
       <NavLink
         icon={<DashboardIconSVG />}
         linkName="Link 5"
         path="/link5"
-        isActive={activeLink === "/link5"}
       />
     </div>
   );
