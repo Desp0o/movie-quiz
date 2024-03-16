@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import NavLink from "./NavLink";
 import DashboardIconSVG from "../SVGS/DashboardIconSVG";
 
 const NavBar: React.FC = () => {
-  const [activeLink, setActiveLink] = useState("");
 
   return (
     <div className="navbar">
@@ -14,8 +13,8 @@ const NavBar: React.FC = () => {
       />
       <NavLink
         icon={<DashboardIconSVG />}
-        linkName="Link 2"
-        path="/link2"
+        linkName="Dashboard"
+        path="/pages/Dashboard"
         
       />
       <NavLink
