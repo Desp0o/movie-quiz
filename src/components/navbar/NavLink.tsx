@@ -4,7 +4,8 @@ import "./Navbar.css"
 import { useSelector } from "react-redux";
 
 interface NavLinkProps {
-    icon: ReactNode;
+    iconActive: ReactNode;
+    iconInactive: ReactNode;
     linkName: string;
     path: string;
 }
@@ -15,14 +16,14 @@ interface RootState {
   }
 }
 
-const NavLink: React.FC<NavLinkProps> = ({linkName, icon, path }) => {
+const NavLink: React.FC<NavLinkProps> = ({linkName, iconActive, iconInactive, path }) => {
   
   const linkNameStore = useSelector((state: RootState) => state.linkReducer.value)
 
   return (
     <Link to={path}>
         <div className={linkName === linkNameStore ? "nav_link active" : "nav_link"}>
-            {icon}
+            {linkName === linkNameStore ? iconActive : iconInactive}
             <p>{linkName}</p>
         </div>
     </Link>
