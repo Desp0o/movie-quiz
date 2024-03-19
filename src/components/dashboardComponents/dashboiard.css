@@ -1,0 +1,36 @@
+
+.dash_top_comp{
+    display: flex;
+    gap: 40px;
+}
+
+.dash_top_right{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.dash_top_progress{
+    
+}
+
+.dash_top_right p{
+    font-size: 33px;
+    font-weight: 900;
+}
+
+.Progress_track{
+    position: relative;
+    height: 12px;
+    border-radius: 30px;
+    background-color: #F5F5F5;
+    overflow: hidden;
+}
+
+.Progress_bar{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #C4C4C4;
+    border-radius: 30px;
+}

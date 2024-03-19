@@ -45,3 +45,9 @@ body {
 .app_inner{
   width: 100%;
 }
+
+.BoxShadow{
+  -webkit-box-shadow: 10px 15px 40px 5px #e0dfdf;
+  -moz-box-shadow: 10px 15px 40px 5px #e0dfdf;
+  box-shadow: 10px 15px 40px 5px #e0dfdf;
+}

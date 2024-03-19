@@ -9,7 +9,7 @@ const SearchComp = () => {
         <span className="search_icon">{searchSVG}</span>
       <input
         type="text"
-        className="search_input"
+        className="search_input BoxShadow"
         value={searchValue}
         placeholder="Search..."
         onChange={(e) => setSearchValue(e.target.value)}

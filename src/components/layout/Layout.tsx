@@ -7,7 +7,7 @@ interface LayoutProps {
 
 const Layout:React.FC<LayoutProps> = ({children}) => {
   return (
-    <div className='main_layout'>
+    <div className='main_layout BoxShadow'>
         {children}
     </div>
   )

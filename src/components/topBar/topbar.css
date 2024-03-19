@@ -29,10 +29,6 @@
   justify-content: flex-start;
 
   padding-left: 65px;
-
-  -webkit-box-shadow: 10px 15px 40px 5px #ededed;
-  -moz-box-shadow: 10px 15px 40px 5px #ededed;
-  box-shadow: 10px 15px 40px 5px #ededed;
 }
 
 .search_icon {
