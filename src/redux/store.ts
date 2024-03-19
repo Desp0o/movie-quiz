@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import linkSlicer from "./LinkSlicer"
+import UserSlicer from "./UserSlicer";
 
 const store = configureStore({
     reducer:{
-        linkReducer: linkSlicer
+        linkReducer: linkSlicer,
+        userReducer: UserSlicer
     }
 })
 
