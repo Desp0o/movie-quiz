@@ -1,7 +1,9 @@
 .navbar{
     min-height: 100svb;
-    
     padding: 43px 31px;
+    
+    display: flex;
+    flex-direction: column;
 }
 
 .nav_link{
@@ -23,4 +25,18 @@
 .nav_link.active{
     color: var(--bg-secondary);
     background-color: var(--secondary);
+}
+
+.navbar_bottom{
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+.login_svg_parent{
+    transform: rotate(180deg);
+}
+
+.login_or_logout_link_item{
+    display: flex;
+    align-items: center;
 }
