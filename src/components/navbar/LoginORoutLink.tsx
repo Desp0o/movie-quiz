@@ -8,12 +8,12 @@ const LoginORoutLink = () => {
   return (
     <div>
       {userName ? (
-        <Link to="/pages/Login" className="login_or_logout_link_item nav_link">
+        <Link to="/" className="login_or_logout_link_item nav_link">
           {loginSVG}
           <p>Log Out</p>
         </Link>
       ) : (
-        <Link to="/" className="login_or_logout_link_item nav_link">
+        <Link to="/pages/Login" className="login_or_logout_link_item nav_link">
           <div className="login_svg_parent">{loginSVG}</div>
           <p>Log In</p>
         </Link>
