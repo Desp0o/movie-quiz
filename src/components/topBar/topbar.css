@@ -1,0 +1,15 @@
+.top_bar{
+    width: 100%;
+    padding: 36px 36px 36px 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avatar_component{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}

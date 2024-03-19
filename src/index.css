@@ -35,5 +35,10 @@ body {
 }
 
 .app{
+  width: 100%;
   display: flex;
+}
+
+.app_inner{
+  width: 100%;
 }
