@@ -1,12 +1,13 @@
 import { useEffect } from "react"
 import { useDispatch } from "react-redux"
-import { setLinkName } from "../redux/LinkSlicer"
+import { useLinkNameHook } from "../hooks/useLinkNameHook"
+
 
 const Main = () => {
-  const dispatch = useDispatch()
+  const setLinkDispatch = useLinkNameHook()
 
   useEffect(()=>{
-    dispatch(setLinkName("Main"))
+    setLinkDispatch('Main')
   },[])
 
 

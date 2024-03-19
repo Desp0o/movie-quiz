@@ -1,13 +1,12 @@
 import { useEffect } from 'react'
-import { useDispatch } from 'react-redux'
-import { setLinkName } from '../redux/LinkSlicer'
+import { useLinkNameHook } from '../hooks/useLinkNameHook'
 
 const Dashboard = () => {
 
-    const dispatch = useDispatch()
+    const setLinkDispatch = useLinkNameHook()
 
     useEffect(()=>{
-        dispatch(setLinkName("Dashboard"))
+      setLinkDispatch("Dashboard")
     },[])
 
   return (
