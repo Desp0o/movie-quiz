@@ -1,17 +1,19 @@
-import React, { useEffect } from 'react'
-import { useLinkNameHook } from '../hooks/useLinkNameHook'
+import { useEffect } from "react";
+import { useLinkNameHook } from "../hooks/useLinkNameHook";
+import Layout from "../components/layout/Layout";
 
 const AllQuiz = () => {
+  const setLinkDispatch = useLinkNameHook();
 
-const setLinkDispatch = useLinkNameHook()
- 
-useEffect(()=>{
-    setLinkDispatch('Quiz')
-},[])
+  useEffect(() => {
+    setLinkDispatch("Quiz");
+  }, []);
 
   return (
-    <div>AllQuiz</div>
-  )
-}
+    <Layout>
+      <div>AllQuiz</div>
+    </Layout>
+  );
+};
 
-export default AllQuiz
+export default AllQuiz;

@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { useLinkNameHook } from "../hooks/useLinkNameHook"
+import Layout from "../components/layout/Layout"
 
 
 const Main = () => {
@@ -11,7 +12,9 @@ const Main = () => {
 
 
   return (
-    <div>Main</div>
+    <Layout>
+      <div></div>
+    </Layout>
   )
 }
 

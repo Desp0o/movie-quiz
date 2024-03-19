@@ -1,7 +1,10 @@
+import Layout from "../components/layout/Layout"
 
 const Login = () => {
   return (
-    <div>Login</div>
+    <Layout>
+      <div>Login</div>
+    </Layout>
   )
 }
 

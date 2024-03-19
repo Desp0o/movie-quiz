@@ -1,17 +1,19 @@
-import { useEffect } from "react"
-import { useLinkNameHook } from "../hooks/useLinkNameHook"
+import { useEffect } from "react";
+import { useLinkNameHook } from "../hooks/useLinkNameHook";
+import Layout from "../components/layout/Layout";
 
 const Contact = () => {
+  const setLinkDispatch = useLinkNameHook();
 
-  const setLinkDispatch = useLinkNameHook()
-
-  useEffect(()=>{
-    setLinkDispatch('contact')
-  },[])
+  useEffect(() => {
+    setLinkDispatch("contact");
+  }, []);
 
   return (
-    <div>Contact</div>
-  )
-}
+    <Layout>
+      <div>Contact</div>
+    </Layout>
+  );
+};
 
-export default Contact
+export default Contact;
