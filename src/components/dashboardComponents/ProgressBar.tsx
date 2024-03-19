@@ -1,10 +1,15 @@
 import React from 'react'
 import "./dashboiard.css"
 
-const ProgressBar = () => {
+interface ProgressBarProps{
+  trackWidth: number;
+  barWidth: number;
+}
+
+const ProgressBar:React.FC<ProgressBarProps> = ({trackWidth, barWidth}) => {
   return (
-    <div className='Progress_track BoxShadow' style={{width:"400px"}}>
-        <div className='Progress_bar' style={{width:"200px"}} />
+    <div className='Progress_track BoxShadow' style={{width:`${trackWidth}px`}}>
+        <div className='Progress_bar' style={{width:`${barWidth}px`}} />
     </div>
   )
 }

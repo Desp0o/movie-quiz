@@ -1,4 +1,3 @@
-import React from 'react'
 import "./dashboiard.css"
 import { avatarDashboard } from '../../assets/SVGS'
 import { useUserHook } from '../../hooks/useUserHook'
@@ -14,7 +13,7 @@ const DashboardTop = () => {
         <div className='dash_top_right'>
             <p className='dash_top_username'>{userName}</p>
             <div className='dash_top_progress'>
-                <ProgressBar />
+                <ProgressBar trackWidth={600} barWidth={433}/>
             </div>
             <div className='dash_top_stat_blocks'></div>
         </div>
