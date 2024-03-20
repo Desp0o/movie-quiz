@@ -1,5 +1,4 @@
 import React from 'react'
-import "./dashboiard.css"
 
 interface ProgressBarProps{
   trackWidth: number;
